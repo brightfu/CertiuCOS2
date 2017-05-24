@@ -1,0 +1,13 @@
+Coq Version: 8.4pl6
+
+"BaseAsrtDef.v" contains the definition of some basic data structures, like arrays and struct.
+
+"OSTCBInvDef.v" "OSQInvDef.v" contains the definition of our global invariants.
+
+"absop.v" contains the specification code of APIs.
+
+"InternalFunSpec.v" contains the specificaiont of internal functions.
+
+"PIF.v" contains the definition and proof of priority-inversion-freedom of uCOS/II.
+
+"pif_theory.v" contains the relation between the original priority-inversion-freedom definition and our new priority-inversion-freedom.

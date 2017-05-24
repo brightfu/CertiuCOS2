@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=certiucos/inline/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

@@ -1,0 +1,5 @@
+ROOT=../../../
+RELATIVE=certiucos/proofs/oscore/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

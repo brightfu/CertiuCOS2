@@ -1,0 +1,5 @@
+ROOT=../../../
+RELATIVE=certiucos/proofs/semaphore/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

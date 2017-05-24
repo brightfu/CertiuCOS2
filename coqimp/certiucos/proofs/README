@@ -1,0 +1,32 @@
+Coq Version: 8.4pl6
+
+Final Theorem of uC/OS-II:
+
+The file "ucos_correct.v" contains the final theorem of correctness of uC/OS-II.
+
+
+Proofs for internal Functions and Interrupts:
+
+The directory "oscore" contains refinement proofs of internal functions and interrupts.
+
+Proofs for synchronization mechanisms:
+
+1. The directory "msgqueue" contains refinement proofs of APIs of message queues .
+
+2. The directory "mutex" contains  proof of APIs of mutex semaphore.
+
+3. The directory "semaphore" contains  proofs of APIs of  normal semaphore.
+
+4. The directory "mailbox" contains  proof of APIs of  mailbox.
+
+Proofs for time management:
+
+"time" contains the proof of APIs of time management.
+
+
+Proof for side conditions of the invariant:
+
+"inv_prop.v" contains the some property of our invariant.
+
+
+other files are some common libraries.

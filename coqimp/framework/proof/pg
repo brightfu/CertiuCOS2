@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=framework/proof/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

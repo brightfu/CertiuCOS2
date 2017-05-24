@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=tactics/mathauto/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

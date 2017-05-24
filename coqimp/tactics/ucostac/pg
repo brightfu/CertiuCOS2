@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=tactics/ucostac/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

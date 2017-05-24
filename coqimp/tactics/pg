@@ -1,0 +1,5 @@
+ROOT=../
+RELATIVE=tactics/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

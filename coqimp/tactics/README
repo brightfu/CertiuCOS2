@@ -1,0 +1,11 @@
+Coq Version: 8.4pl6
+
+"derivedrules" contains the derived rules to adapt to different application scenarios .
+
+"seplog_tactics" contains the tactics to solve assertion implication.
+
+"symbolic_execution" contains the tactics to do symbolic execution.
+
+"hoare_tactics" contains the tactics to step-forward the hoare triple.
+
+"math_solver" contains the tactics to prove mathematical properties.

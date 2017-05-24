@@ -1,0 +1,31 @@
+#!/bin/sh
+# Start Proof General with the right -I options
+# Use the Makefile to rebuild dependencies if needed
+# Recompile the modified file after coqide editing
+
+PWD=`pwd`
+
+COQBIN=$coq85bin
+
+COQPROGNAME=${COQBIN}coqtop
+COQPROGARGS="
+	\"-R\" \"$PWD\" \"CertiOS\"
+"
+
+#	\"-I\" \"$PWD/../../../framework/machine/memory\"
+#	\"-I\" \"$PWD/../../../framework/machine\"
+#	\"-I\" \"$PWD/../../../framework/simulation\"
+#	\"-I\" \"$PWD/../../../framework/logic\"
+#	\"-I\" \"$PWD/../../../framework/theory\"
+#        \"-I\" \"$PWD/../../../framework/auxlibs\"
+#	\"-I\" \"$PWD/../../../tactics\"		
+#	\"-I\" \"$PWD/../../../certiucos/code\"
+#	\"-I\" \"$PWD/../../../certiucos/spec\"
+#	\"-I\" \"$PWD/../../../certiucos/proofs\"
+#        \"-I\" \"$PWD/../../../certiucos/proofs/time\"
+#        \"-I\" \"$PWD/../../../certiucos/proofs/msgqueue\"
+#"
+
+basename $1 | xargs find -type f -name | xargs emacs --eval "(setq coq-prog-name \"$COQPROGNAME\")" \
+ --eval "(setq coq-prog-args '($COQPROGARGS))"
+

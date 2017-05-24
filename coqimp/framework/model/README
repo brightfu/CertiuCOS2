@@ -1,0 +1,6 @@
+Coq Version: 8.4pl6
+
+The folder "memory" contains the definition of our memory model and some basic libs.
+
+The file "language.v" contains the defintion of our language syntax and the operational semantics are definted in "opsem.v".
+

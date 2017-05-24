@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=tactics/hoareforward/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

@@ -1,0 +1,5 @@
+ROOT=../../
+RELATIVE=framework/logic/
+
+cd ${ROOT}
+sh pg ${RELATIVE}$1

@@ -1,0 +1,5 @@
+Coq Version: 8.4pl6
+
+"assertion.v" contains the assertion syntax and semantics(deep embedding).
+
+"toprule" contains the "top rule", "api rule", "interrupt rule", "internal function rule", "inferules" contains the definition of our rules and the other files are the soundness proof of each rule.(the derived rules are stored in "tactics/derivedrules").
