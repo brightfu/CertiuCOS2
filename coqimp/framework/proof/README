@@ -1,3 +1,0 @@
-Coq Version: 8.4pl6
-
-"toptheorem" contains the semantics and the soundness proof of the rules in "toprule", the other files contains the auxiliary lemmas for toprule soundness.
