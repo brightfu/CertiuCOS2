@@ -28,9 +28,9 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
        //... member 
     };
    ```
-2. float double type 
+2. float and double types 
     
-3. Cast integer to pointer : 
+3. Cast integers to pointers : 
    ```C
    int a = 1;
    int * p = &a;
