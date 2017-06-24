@@ -42,7 +42,7 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
       printf("value of a: %d\n", a);
    }
    ```
-5. Kernel API could not access the application's resource (verification reason). Our framework physically partitions the states between applications and kernels, and we do not allow the resource to be passed from the application to the kernel. For example, we cannot write a kenel API f as below, which might be used by a user application g:
+5. Kernel API could not access the application's resource (verification reason). Our framework physically partitions the states between applications and kernels, and we do not allow the resource to be passed from the application to the kernel. For example, we cannot write a kenel API "f" as below, which might be used by a user application "g":
    ```C
    void f (int * p){
       * p = 1;
