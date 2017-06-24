@@ -23,26 +23,27 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
 # Limitation of C Programming Language : the following features are not supported 
 
 1.  union type :
+   ```C
     union Id{
        //... member 
     };
-
+   ```
 2. float double type 
     
 3. Cast integer to pointer : 
+   ```C
    int a = 1;
    int * p = &a;
-   
+    ```
 4. FOR loop : (Now we only have while loop, we can encode FOR loop with our while loop)
+ ```C
    for( int a = 10; a < 20; a = a + 1 )
    {
       printf("value of a: %d\n", a);
    }
-   
-5. Kernel API could not access the application's resource (verification reason). 
-
-   For example, we cannot write a kenel API f as below, which might be used by a user application g:
-   
+   ```
+5. Kernel API could not access the application's resource (verification reason). Our framework physically partitions the states between applications and kernels, and we do not allow the resource to be passed from the application to the kernel. For example, we cannot write a kenel API f as below, which might be used by a user application g:
+    ```C
    void f (int * p){
       * p = 1;
       return;
@@ -53,8 +54,8 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
       f(&a);
       return;
    }
- 
-Our framework physically partitions the states between applications and kernels, and we do not allow the resource to be passed from the application to the kernel. 
+  ```
+
    
   
 
