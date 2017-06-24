@@ -36,7 +36,7 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
    int * p = &a;
     ```
 4. FOR loop : (Now we only have while loop, we can encode FOR loop with our while loop)
- ```C
+   ```C
    for( int a = 10; a < 20; a = a + 1 )
    {
       printf("value of a: %d\n", a);
@@ -54,7 +54,7 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
       f(&a);
       return;
    }
-  ```
+   ```
 
    
   
