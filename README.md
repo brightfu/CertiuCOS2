@@ -22,7 +22,7 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
 
 # Following features are NOT allowed in our C language 
 
-1.  union type :
+1. union type :
    ```C
     union Id{
        //... member 
@@ -43,7 +43,7 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
    }
    ```
 5. Kernel API could not access the application's resource (verification reason). Our framework physically partitions the states between applications and kernels, and we do not allow the resource to be passed from the application to the kernel. For example, we cannot write a kenel API f as below, which might be used by a user application g:
-    ```C
+   ```C
    void f (int * p){
       * p = 1;
       return;
@@ -55,8 +55,3 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
       return;
    }
    ```
-
-   
-  
-
-
