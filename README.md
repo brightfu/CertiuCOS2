@@ -30,11 +30,18 @@ Download : https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz
    ```
 2. float and double types 
     
-3. Cast integers to pointers : 
+3. cast integers to pointers : 
    ```C
    int a = 1;
    int * p = &a;
     ```
+4. pointer arithmetic :
+   ```C
+   int *q ;
+   //假设当前地址为 ： q = 2231H 
+   q += 4 ; // q = q + 4*4 = 2239H
+   ```
+
 4. FOR loop : (Now we only have while loop, we can encode FOR loop with our while loop)
    ```C
    for( int a = 10; a < 20; a = a + 1 )
