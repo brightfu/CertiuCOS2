@@ -2,10 +2,10 @@
 A refinement-based verification framework for preemptive OS kenerls. 
 
 # Coq8.5
-Download [Coq8.5](https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz)
-Install [Emacs](https://www.gnu.org/software/emacs/)
-Install [Company-coq](https://github.com/cpitclaudel/company-coq)
-Install [Visual Studio Code](https://www.gnu.org/software/emacs/) and Coq extenstions
+* Download [Coq8.5](https://coq.inria.fr/distrib/V8.5/files/coq-8.5.tar.gz)
+* Install [Emacs](https://www.gnu.org/software/emacs/)
+* Install [Company-coq](https://github.com/cpitclaudel/company-coq)
+* Install [Visual Studio Code](https://www.gnu.org/software/emacs/) and Coq extenstions
 
 # Compilation
 1. Dowload coq8.5
